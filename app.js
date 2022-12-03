@@ -12,8 +12,20 @@ let btncvp = document.getElementById("btncvp");
 window.onload = function () {
 
     number1 = randomNumber(0, 100);
-    number2 = randomNumber(0, 5);
+    number2 = randomNumber(0, 100);
     operator = selectOperator[3];
+
+    if (operator == "/") {
+        while (true) {
+            // number 2 ye bölünene kadar devam et 
+            if (number1 % number2 == 0) {
+                //  console.log("sayı bölünecek artık")
+                break;
+            }
+            number2 = randomNumber(0, 100);
+        }
+    }
+
     document.getElementById("operator").innerHTML = operator;
     document.getElementById("number1").innerHTML = number1;
     document.getElementById("number2").innerHTML = number2;
@@ -38,3 +50,10 @@ window.onload = function () {
     document.getElementById("result").innerHTML = result;
 
 }
+
+
+document.getElementById("refresh").addEventListener("click", function () {
+
+    window.location.reload();
+
+})

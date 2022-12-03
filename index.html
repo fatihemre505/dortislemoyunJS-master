@@ -14,24 +14,36 @@
 
     <div class="container">
 
+        <button id="refresh"></button>
+
+
         <h1>Dört İşlem Oyunu</h1>
 
-        <div class="container-operator">
-            <span id="number1">Sayı1</span>
-            <span id="operator">+</span>
-            <span id="number2">Sayı2</span>
-        </div>
-
-        <div class="container-answer">
-            <input type="text" id="answer" autofocus placeholder="Cevap">
-        </div>
-
         <div class="container-score">
+            <h2>Score</h2>
             <span id="True">0</span>
             <span id="False">0</span>
         </div>
 
-        <button id="btncvp">Cevapla</button>
+        <div class="container-main">
+
+            <div class="container-operator">
+                <span id="number1">Sayı1</span>
+                <span id="operator">+</span>
+                <span id="number2">Sayı2</span>
+                <span id="">=</span>
+            </div>
+
+            <div class="container-answer">
+                <input type="text" id="answer" autofocus placeholder="Cevap">
+            </div>
+
+            <button id="btncvp">Gönder</button>
+
+        </div>
+
+
+
     </div>
 
     <p id="result"></p>
